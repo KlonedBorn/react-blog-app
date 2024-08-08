@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding React",
+    "author": "John Doe",
+    "description": "A comprehensive guide to mastering React.js, the most popular JavaScript library for building user interfaces.",
+    "publishedDate": "August 5, 2024"
+  },
+  {
+    "id": 2,
+    "title": "JavaScript ES6 Features",
+    "author": "Jane Smith",
+    "description": "Learn about the new features introduced in ES6 and how they can improve your JavaScript code.",
+    "publishedDate": "August 6, 2024"
+  },
+  {
+    "id": 3,
+    "title": "CSS Grid vs Flexbox",
+    "author": "Mike Johnson",
+    "description": "A deep dive into CSS Grid and Flexbox, comparing their use cases and helping you decide which one to use.",
+    "publishedDate": "August 7, 2024"
+  },
+  {
+    "id": 4,
+    "title": "Node.js Best Practices",
+    "author": "Sarah Connor",
+    "description": "Tips and tricks for writing efficient and scalable Node.js applications.",
+    "publishedDate": "August 8, 2024"
+  },
+  {
+    "id": 5,
+    "title": "React Native for Mobile Development",
+    "author": "Tom Hardy",
+    "description": "How to get started with React Native and build cross-platform mobile applications.",
+    "publishedDate": "August 9, 2024"
+  },
+  {
+    "id": 6,
+    "title": "The Future of Web Development",
+    "author": "Emma Watson",
+    "description": "Exploring the trends and technologies that are shaping the future of web development.",
+    "publishedDate": "August 10, 2024"
+  }
+]

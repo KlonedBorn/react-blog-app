@@ -20,13 +20,13 @@ const AppLogo = () => (
 export default function Header() {
   return (
     <AppBar
-      position="static"
       sx={{
-        backgroundColor: (theme) => theme.palette.primary.main,
         padding: "0.5rem",
+        backgroundColor: (theme) => theme.palette.primary.main,
+        flexGrow: 1,
       }}
     >
-      <Toolbar sx={{ padding: 0.5 }}>
+      <Toolbar>
         <AppLogo />
         <Typography
           variant="h6"
