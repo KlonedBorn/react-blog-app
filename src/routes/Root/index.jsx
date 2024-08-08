@@ -1,11 +1,11 @@
 import Header from "./Header";
 import { Box, Container } from "@mui/material";
-import useView from "./useView";
 import CreatePage from "../../pages/Create";
 import ExplorePage from "../../pages/Explore";
+import { useState } from "react";
 
 export default function RootLayout() {
-  const [view, setView] = useView();
+  const [view, setView] = useState("explore");
 
   return (
     <Container
@@ -20,7 +20,7 @@ export default function RootLayout() {
         height: "100vh",
       }}
     >
-      <Header />
+      <Header onViewChange={setView} />
       <Box
         sx={{
           flexGrow: 1,

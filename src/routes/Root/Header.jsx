@@ -17,7 +17,14 @@ const AppLogo = () => (
   />
 );
 
-export default function Header() {
+export default function Header({ view, onViewChange = () => {} }) {
+  // Handler to change the view
+  const handleViewChange = (event, newView) => {
+    if (newView !== null) {
+      onViewChange(newView); // Pass the new view to the callback
+    }
+  };
+
   return (
     <AppBar
       sx={{
@@ -42,6 +49,8 @@ export default function Header() {
         </Typography>
         <ToggleButtonGroup
           exclusive
+          value={view} // Reflect the current view
+          onChange={handleViewChange}
           sx={{
             "& .MuiToggleButton-root": {
               gap: 2,
@@ -58,8 +67,12 @@ export default function Header() {
             },
           }}
         >
-          <ToggleButton value="create">Create</ToggleButton>
-          <ToggleButton value="explore">Explore</ToggleButton>
+          <ToggleButton key="create" value="create">
+            Create
+          </ToggleButton>
+          <ToggleButton key="explore" value="explore">
+            Explore
+          </ToggleButton>
         </ToggleButtonGroup>
       </Toolbar>
     </AppBar>

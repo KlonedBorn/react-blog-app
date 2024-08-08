@@ -63,6 +63,7 @@ export default function ExplorePage() {
 
   return (
     <Container
+      disableGutters
       sx={{
         display: "flex",
         flexDirection: "column",
