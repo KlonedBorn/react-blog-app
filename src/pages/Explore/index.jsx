@@ -10,8 +10,8 @@ import {
   Box,
   Paper,
 } from "@mui/material";
-import useBlogData from "./useBlogData";
 import BlogCardGrid from "./BlogCardGrid";
+import useBlog from "../../hooks/useBlogs";
 
 const SearchByTitle = ({ searchTerm, setSearchTerm }) => (
   <TextField
@@ -39,7 +39,7 @@ const CardSorter = ({ sortOrder, setSortOrder }) => (
 );
 
 export default function ExplorePage() {
-  const { blogs, loading } = useBlogData();
+  const { blogs, addBlog, delBlog, loading } = useBlog();
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("asc"); // Default sort order
   const [filteredBlogs, setFilteredBlogs] = useState([]);
