@@ -39,7 +39,7 @@ const CardSorter = ({ sortOrder, setSortOrder }) => (
 );
 
 export default function ExplorePage() {
-  const { blogs, addBlog, delBlog, loading } = useBlog();
+  const { blogs, loading } = useBlog();
   const [searchTerm, setSearchTerm] = useState("");
   const [sortOrder, setSortOrder] = useState("asc"); // Default sort order
   const [filteredBlogs, setFilteredBlogs] = useState([]);
